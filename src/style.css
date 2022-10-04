@@ -1,0 +1,82 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  position: relative; /* For z-indexes to work */
+  display: flex;
+  background-color: #ededed;
+  padding: 10px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.05);
+  z-index: 11;
+}
+
+.page-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  min-height: calc(
+    100vh - 58px - 39px
+  ); /* 100% - header height - footer height */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #d1d1d1;
+  gap: 50px;
+  box-shadow: 7px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.sceduled-tasks {
+  padding: 35px 0 0 15px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks-today-btn,
+.tasks-week-btn,
+.new-project-btn {
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 65%;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background-color: #c4c4c4;
+}
+
+.projects {
+  padding: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-display {
+  background-color: #bebebe;
+  padding: 15px 0 0 30px;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  background-color: #acacac;
+  padding: 10px;
+  z-index: 11;
+}
+
+.footer > p {
+  margin: 0;
+}

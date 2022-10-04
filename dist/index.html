@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Index</title>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="page-name">Todo List</h1>
+    </header>
+    <main class="main">
+      <nav class="sidebar">
+        <div class="sceduled-tasks">
+          <button class="tasks-today-btn" id="tasksTodayBtn">
+            <label for="tasksTodayBtn">Today</label>
+          </button>
+          <button class="tasks-week-btn" id="tasksWeekBtn">
+            <label for="tasksWeekBtn">This Week</label>
+          </button>
+        </div>
+        <div class="projects">
+          <h2>Your Projects</h2>
+          <button class="new-project-btn" id="newProjectBtn">
+            <label for="newProjectBtn">Add Project</label>
+          </button>
+        </div>
+      </nav>
+      <section class="project-display">
+        <h3 class="project-name" id="projectNameStr">Project Beta</h3>
+        <div class="project-tasks" id="projectTasksDiv"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>qvarrk</p>
+    </footer>
+  </body>
+</html>
