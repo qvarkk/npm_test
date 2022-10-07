@@ -34,5 +34,28 @@
     <footer class="footer">
       <p>qvarrk</p>
     </footer>
+    <div class="overlay inactive" id="popupOverlay">
+      <div class="bg" id="overlayBg"></div>
+      <div class="add-popup">
+        <p class="add-para">New Task</p>
+        <form class="add-form">
+          <input type="text" id="addTitle" class="add-title-input" required />
+          <input
+            type="text"
+            id="addDescription"
+            class="add-description-input"
+            required
+          />
+          <input type="date" id="addDueTo" class="add-date-input" required />
+          <div class="checkbox-divider">
+            <label for="addStatus">Done</label>
+            <input type="checkbox" id="addStatus" class="add-status-input" />
+          </div>
+          <button type="submit" class="add-task-btn" id="addTaskBtn">
+            Add Task
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
