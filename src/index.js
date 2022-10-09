@@ -13,7 +13,6 @@ addTaskBtn.addEventListener("click", () => {
 });
 
 overlayBg.addEventListener("click", () => {
-  console.log("asdadasda");
   overlay.classList.add("inactive");
 });
 
