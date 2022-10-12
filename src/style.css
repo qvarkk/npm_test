@@ -142,6 +142,10 @@ html {
   border-radius: 5px;
 }
 
+.add-date-input {
+  max-width: 140px;
+}
+
 .checkbox-divider {
   display: flex;
   justify-content: space-between;

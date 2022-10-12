@@ -39,14 +39,24 @@
       <div class="add-popup">
         <p class="add-para">New Task</p>
         <form class="add-form">
-          <input type="text" id="addTitle" class="add-title-input" required />
+          <input
+            type="text"
+            id="addTitle"
+            class="add-title-input"
+            placeholder="Title"
+            required
+          />
           <input
             type="text"
             id="addDescription"
             class="add-description-input"
+            placeholder="Description"
             required
           />
-          <input type="date" id="addDueTo" class="add-date-input" required />
+          <div class="checkbox-divider">
+            <label for="addDueTo">Due To</label>
+            <input type="date" id="addDueTo" class="add-date-input" required />
+          </div>
           <div class="checkbox-divider">
             <label for="addStatus">Done</label>
             <input type="checkbox" id="addStatus" class="add-status-input" />

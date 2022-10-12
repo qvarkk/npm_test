@@ -17,13 +17,20 @@ overlayBg.addEventListener("click", () => {
 });
 
 const submitTaskBtn = document.querySelector("#addTaskBtn");
+const addTitleInput = document.querySelector("#addTitle");
 const addDescriptionInput = document.querySelector("#addDescription");
 const addDueToInput = document.querySelector("#addDueTo");
-const addStatus = document.querySelector("#addStatus");
-const addTitleInput = document.querySelector("#addTitle");
+const addStatusInput = document.querySelector("#addStatus");
 
 submitTaskBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log("submited");
+
+  console.log(
+    `${addTitleInput.value} is title,${addDescriptionInput.value} is Description, ${addDueToInput.value} is date due to, ${addStatusInput.value} is status`
+  );
+  addTitleInput.value = "";
+  addDueToInput.value = "";
+  addDescriptionInput.value = "";
+  addStatusInput.checked = false;
   overlay.classList.add("inactive");
 });
